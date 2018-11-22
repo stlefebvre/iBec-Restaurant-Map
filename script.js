@@ -49,7 +49,7 @@ function initAutocomplete() {
             markers.push(new google.maps.Marker({
                 map: map,
                 label: place.name,
-                position: place.geometry.location
+                position: place.geometry.location,
             }));
         });
         //fits map within bias bounds
