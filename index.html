@@ -15,9 +15,9 @@
 
 <body>
     <!--Bootstrap container to contain all HTML elements for responsiveness-->
-
+    <div class="container-fluid"></div>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Where do you want to eat?</a>
+            <a class="navbar-brand" href="#">Where you want to eat</a>
             <form class="form-inline">
                 <input id="mapSearch" class="controls" type="text" placeholder="Search">
             </form>
@@ -25,8 +25,8 @@
 
         <!--div holding google maps-->
         <div id="map"></div>
+    </div>
     
-
     <!--Google Maps script tag-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBax4ZBeJP1fKiInTVNh8MVabVdW09ZlIk&libraries=places&callback=initAutocomplete">
     </script>

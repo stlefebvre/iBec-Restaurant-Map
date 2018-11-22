@@ -16,7 +16,7 @@ function initAutocomplete() {
     
     //Links searchbox in UI to javascript functionality
     var input = document.getElementById("mapSearch");
-    var searchBox = new google.maps.places.SearchBox(input); map.controls.push(input)
+    var searchBox = new google.maps.places.SearchBox(input); map.controls[google.maps.ControlPosition.TOP_LEFT].push(input)
     
     //Biases searchBox results towards map's viewport (centered at portland)
     map.addListener('bounds_changed', function() {
@@ -49,7 +49,7 @@ function initAutocomplete() {
             markers.push(new google.maps.Marker({
                 map: map,
                 label: place.name,
-                position: place.geometry.location,
+                position: place.geometry.location
             }));
         });
         //fits map within bias bounds
